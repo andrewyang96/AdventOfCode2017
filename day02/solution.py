@@ -1,5 +1,5 @@
 import itertools
-from mypy.types import List
+from typing import List
 
 def checksum(spreadsheet: List[List[int]]) -> int:
     return sum(map(lambda row: max(row) - min(row), spreadsheet))
